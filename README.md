@@ -80,3 +80,15 @@ class Clock extends Component {
 }
 export default Clock;
 ```
+
+## Ejercicios 7, 8, 9
+
+En este ejercicio de React JS deberéis crear una lista, esta lista tendrá dentro distintos contactos y deberá cumplir con las siguientes funcionalidades:
+
+- [x] Mostrar contacto.
+
+- [x] Crear contacto.
+
+- [x] Eliminar contacto.
+
+- [x] Cambiar el estado del contacto entre Conectado y Desconectado.

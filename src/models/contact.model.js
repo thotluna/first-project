@@ -1,41 +1,44 @@
 export class Contact {
-
-  #firstname = ""
-  #lastname = ""
-  #email = ""
+  #id = ''
+  #firstname = ''
+  #lastname = ''
+  #email = ''
   #connected = false
 
-  constructor(firstname, lastname, email, connected) {
+  constructor(firstname, lastname, email, connected, id) {
     this.#firstname = firstname
     this.#lastname = lastname
     this.#email = email
     this.#connected = connected
+    this.#id = id || self.crypto.randomUUID()
   }
 
-  toggledConect(){
+  toggledConect() {
     this.#connected = !this.#connected
     return this.#connected
   }
 
-  getFirstname(){
+  getFirstname() {
     return this.#firstname
   }
 
-  getLastname(){
+  getLastname() {
     return this.#lastname
   }
 
-  getEmail(){
+  getEmail() {
     return this.#email
   }
 
-  getConnected(){
+  getConnected() {
     return this.#connected
   }
 
-  clone(){
-    return new Contact(this.#firstname, this.#lastname, this.#email, this.#connected)
+  getId() {
+    return this.#id
   }
 
-
+  clone(id = null) {
+    return new Contact(this.#firstname, this.#lastname, this.#email, this.#connected, id)
+  }
 }
