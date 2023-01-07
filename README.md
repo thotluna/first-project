@@ -97,5 +97,5 @@ En este ejercicio de React JS deberéis crear una lista, esta lista tendrá dent
 
 Partiendo del proyecto final, deberéis utilizar crear un formulario con el que crear tareas. Para hacer esto usaréis:
 
-- [ ] Formik para el formulario.
-- [ ] Yup para las validaciones.
+- [x] Formik para el formulario.
+- [x] Yup para las validaciones.
