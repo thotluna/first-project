@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Contact } from '../models/contact.model'
-import ContactForm from './ContactForm'
-import ContactItem from './ContactItem'
+import { Contact } from '../../models/contact.model'
+import ContactForm from '../ContactForm'
+import ContactItem from '../ContactItem'
 
 const listInitial = [
   new Contact('thot', 'luna', 'thot@luna.me', false),

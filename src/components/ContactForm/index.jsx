@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 
-import { Contact } from '../models/contact.model.js'
+import { Contact } from '../../models/contact.model.js'
 
 export default function ContactForm({ onSubmit }) {
   const firstname = useRef('')

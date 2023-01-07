@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contact } from '../models/contact.model'
+import { Contact } from '../../models/contact.model'
 import PropTypes from 'prop-types'
 
 function ContactItem({ contact, togglingHandler, delHandler }) {
