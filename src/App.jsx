@@ -1,17 +1,24 @@
 import React from 'react'
 import './App.css'
-import ComponentA from './components/ComponentA'
-import ContactList from './components/ContactList'
+import SignIn from './components/SignIn'
+import SignUp from './components/SignUp'
+// import ComponentA from './components/ComponentA'
+// import ContactList from './components/ContactList'
 // import Clock from './components/Exercise456'
-import Exercise4562 from './components/Exercise456-2'
+// import Exercise4562 from './components/Exercise456-2'
 
 function App() {
   return (
     <div className="App" >
-      <ComponentA />
+      {/* <ComponentA />
       {/* <Clock /> */}
-      <Exercise4562 />
-      <ContactList />
+      {/* <Exercise4562 />
+      <ContactList /> */}
+      <h2>Sign Up</h2>
+      <SignUp />
+
+      <h2>Sign In</h2>
+      <SignIn />
     </div>
   )
 }

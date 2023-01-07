@@ -1,4 +1,3 @@
-import { element, instanceOf } from 'prop-types'
 import React, { useState } from 'react'
 import { Contact } from '../models/contact.model'
 import ContactForm from './ContactForm'

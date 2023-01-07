@@ -1,0 +1,33 @@
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.label{
+  
+  align-self: flex-start;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.input{
+  padding: 1rem 0.5rem;
+}
+
+.button-signin{
+  width: 100%;
+  padding: 1rem 0.5rem;
+}
+
+.span-error{
+  color: red;
+  font-size: 0.8rem;
+  background-color: rgb(45, 49, 49);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  align-self: flex-start;
+}
