@@ -1,21 +1,15 @@
 import React from 'react'
+
 import './App.css'
-import SignIn from './components/SignIn'
-import SignUp from './components/SignUp'
+import ContainerGeneral from './layouts/ContainerGeneral/index.jsx'
 
 function App() {
   return (
-    <div className="App" >
-      {/* <ComponentA />
-      {/* <Clock /> */}
-      {/* <Exercise4562 />
-      <ContactList /> */}
-      <h2>Sign Up</h2>
-      <SignUp />
-
-      <h2>Sign In</h2>
-      <SignIn />
-    </div>
+    <ContainerGeneral>
+      <div className="App" >
+        <h1>Curso de React Open Bootcamp</h1>
+      </div>
+    </ContainerGeneral>
   )
 }
 
