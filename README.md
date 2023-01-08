@@ -99,3 +99,10 @@ Partiendo del proyecto final, deberéis utilizar crear un formulario con el que 
 
 - [x] Formik para el formulario.
 - [x] Yup para las validaciones.
+
+## Ejercicio secciones 16, 17, 18
+Crear el sistema de enrutado de la aplicación en React:
+
+Permitir la navegación de Login a Registro y viceversa
+
+No podremos acceder a Tareas a no ser que nos hayamos logeado primero.
