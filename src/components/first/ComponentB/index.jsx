@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Contact } from '../../models/contact.model'
+import { Contact } from '../../../models/contact.model'
 
 export function ComponentB({ contact, toggledConect }) {
   return (

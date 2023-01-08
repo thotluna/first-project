@@ -1,0 +1,19 @@
+.group-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1rem 0.5em;
+  list-style: none;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+  font-weight: regular;
+  padding: 1rem .5rem;
+}
+
+.isActive{
+  font-weight: 700;
+}

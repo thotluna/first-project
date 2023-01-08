@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'
@@ -15,24 +16,26 @@ const schema = Yup.object().shape({
     .required('is required')
 })
 
-export default function SignIn() {
+export default function SignIn({ onSubmit }) {
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(schema)
   })
-  const onSubmit = data => console.log(data)
+  const handleOnSubmit = data => {
+    onSubmit(data)
+  }
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+    <form className={styles.form} onSubmit={handleSubmit(handleOnSubmit)}>
       <InputLayout>
         <label htmlFor='email' className={styles.label}>
         E-mail</label>
-        <input id='email' className={styles.input} type='text' placeholder='Enter your E-mail' {...register('email')} />
+        <input id='email' className={styles.input} type='text' autoComplete="username" placeholder='Enter your E-mail' {...register('email')} />
         <span className={styles['span-error']}>{errors.email?.message}</span>
       </InputLayout>
 
       <InputLayout>
       <label htmlFor='password' className={styles.label}>Password</label>
-      <input className={styles.input} type='password' placeholder='Enter your password' {...register('password')} />
+      <input className={styles.input} type='password' autoComplete="current-password" placeholder='Enter your password' {...register('password')} />
       <span className={styles['span-error']}>{errors.password?.message}</span>
       </InputLayout>
 
@@ -41,4 +44,8 @@ export default function SignIn() {
       </InputLayout>
     </form>
   )
+}
+
+SignIn.propTypes = {
+  onSubmit: PropTypes.func
 }
