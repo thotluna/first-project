@@ -31,6 +31,9 @@ export default function Menu() {
             <li>
               <NavLink to='/third'>Ejercicio 3</NavLink>
             </li>
+            <li>
+              <NavLink to='/tasks'>Ejercicio 4</NavLink>
+            </li>
           </ul>
         }
     </nav>

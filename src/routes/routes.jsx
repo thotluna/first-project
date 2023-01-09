@@ -1,6 +1,7 @@
 import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import App from '../App'
+import { ListTask } from '../example-reducer/ListTask'
 import ErrorPage from '../pages/error-page'
 import FirstPage from '../pages/first-page'
 import LoginPage from '../pages/login-page'
@@ -16,5 +17,6 @@ export const Routes = createBrowserRouter([
 
   { path: '/first', element: <ProtectedRoute><FirstPage /></ProtectedRoute> },
   { path: '/second', element: <ProtectedRoute><SecondPage /></ProtectedRoute> },
-  { path: '/third', element: <ProtectedRoute><ThirdPage /></ProtectedRoute> }
+  { path: '/third', element: <ProtectedRoute><ThirdPage /></ProtectedRoute> },
+  { path: '/tasks', element: <ListTask /> }
 ])

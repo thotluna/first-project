@@ -106,3 +106,11 @@ Crear el sistema de enrutado de la aplicación en React:
 Permitir la navegación de Login a Registro y viceversa
 
 No podremos acceder a Tareas a no ser que nos hayamos logeado primero.
+
+## Ejercicios sesiones 26 y 27
+Utiliza useReducer y useContext para poder gestionar tareas en un proyecto de React. El proyecto debe permitir:
+- [x] Crear tareas
+- [x] Borrar tareas
+- [x] Filtrar tareas
+
+Repo para uso de useReducer y useContext: https://gitlab.com/masajo/ob-react-usereducer
